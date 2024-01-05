@@ -1,0 +1,20 @@
+$hoverColor: rgba(255, 255, 255, 0.216);
+
+.listItemButtomHover {
+  transition: background-color 0.3s ease-out;
+  height: 100%;
+
+  &:hover {
+    background-color: $hoverColor !important;
+  }
+}
+
+.lastItem {
+  margin-top: calc(100vh - 450px) !important;
+  height: 60px;
+}
+
+.selectedItem {
+  border-left: 3px solid #8e08cdfc;
+  background-color: $hoverColor !important;
+}

@@ -1,0 +1,222 @@
+
+/* We can remove the border we've set at the beginnig */
+#gjs {
+    border: none !important;
+  }
+  /* Theming */
+  
+  /* Primary color for the background */
+  .gjs-one-bg {
+    background-color: #061c27 !important;
+  }
+  
+  .gjs-block {
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* Secondary color for the text color */
+  .gjs-two-color {
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+  
+  /* Tertiary color for the background */
+  .gjs-three-bg {
+    background-color: white !important;
+    color: white;
+  }
+  
+  /* Quaternary color for the text color */
+  .gjs-four-color,
+  .gjs-four-color-h:hover {
+    color: white !important;
+  }
+  
+  #gjs a {
+    color: white;
+  }
+  
+  #gjs {
+    height: 100vh !important;
+  }
+  
+  .gjs-pn-panel {
+    padding: 4px !important;
+  }
+  
+  .gjs-pn-btn:hover,
+  .gjs-pn-btn.gjs-pn-active {
+    color: white !important;
+    border-bottom: 2px solid #8e08cdfc;
+  }
+  
+  .gjs-pn-panel .gjs-pn-buttons {
+    height: 30px !important;
+  }
+  .gjs-pn-panel.gjs-pn-views .gjs-pn-buttons {
+    justify-content: space-around !important;
+  }
+  
+  .gjs-pn-panel.gjs-pn-devices-c .gjs-pn-buttons {
+    margin-left: 15px !important;
+    width: 160px !important;
+  }
+  
+  .gjs-pn-panel.gjs-pn-views-container {
+    background: #061c27 !important;
+    padding-top: 40px !important;
+  }
+  
+  .gjs-pn-panel.gjs-pn-options {
+    width: 400px !important;
+    margin-right: 10px !important;
+  }
+  
+  .gjs-blocks-c {
+    justify-content: space-evenly !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  
+  
+  
+  @media only screen and (max-width: 1135px) {
+      .gjs-block.gjs-one-bg.gjs-four-color-h {
+        width: 74px !important;
+      }
+  
+      .gjs-block__media svg {
+        width: 45px !important;
+      }
+  }
+  
+  .gjs-block__media svg {
+    width: 48px;
+  }
+  
+  .gjs-block__media {
+    margin-bottom: 0 !important;
+  }
+  
+  .gjs-block-label {
+    font-size: 12px;
+  }
+  
+  .gjs-traits-label {
+    color: #444 !important;
+  }
+  
+  .gjs-blocks-cs {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gjs-block-categories {
+    display: flex;
+    order: 2;
+  }
+  
+  .sp-container {
+    left: calc(100% - 200px) !important;
+  }
+  
+  .swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+    height: 350px;
+  }
+  
+  #save-button.badge::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    width: 0.45rem;
+    height: 0.45rem;
+    background-color: #dc3545;
+    border-radius: 50%;
+    opacity: 70%;
+    animation: color-animation 8s infinite;
+  }
+  
+  @keyframes color-animation {
+    0% {
+      background-color: red;
+    }
+    16.67% {
+      background-color: orange;
+    }
+    33.33% {
+      background-color: yellow;
+    }
+    50% {
+      background-color: green;
+    }
+    66.67% {
+      background-color: greenyellow;
+    }
+    83.33% {
+      background-color: wheat;
+    }
+    100% {
+      background-color: violet;
+    }
+  }
+  
+  /* Dashboard */
+  .container__card-template {
+    margin-top: 20px;
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .container__card-template .email-card {
+    width: 260px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  
+  .container__card-template .email-card img {
+    border-radius: 3px;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border: 1px solid #cbcbcb;
+  }
+  
+  .container__card-template a h5 {
+    opacity: 0.7;
+  }
+  
+  .overlay {
+    justify-content: end;
+    align-items: end;
+    transition: transform 0.2s ease-out;
+    max-height: 600px;
+    overflow: hidden;
+  }
+  
+  
+  .overlay button {
+    margin: 25px;
+    height: 40px;
+    width: 110px;
+    font-weight: bold;
+  }
+  
+  .container__card-template .email-card:hover .overlay {
+    bottom: 56px !important;
+    left: 19px;
+    width: 222px;
+    display: flex;
+    border-radius: 3px;
+    height: 293px;
+  }
+  
+  .container__card-template .email-card:hover img {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-out;
+  }
+  
+  
