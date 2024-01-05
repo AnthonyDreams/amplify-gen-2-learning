@@ -1,4 +1,3 @@
-import { WorkspaceMember } from '@/API'
 import { ColumnDef } from '@tanstack/react-table'
 import { Delete, MoreHorizontal } from 'lucide-react'
 import {
@@ -8,9 +7,10 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { Button } from '../ui/button'
+import { WorkspaceMember } from '@/lib/amplify-schema'
 
 const columns: (
-  onRemove: (data: any) => void,
+  onRemove: (data: WorkspaceMember) => void,
 ) => ColumnDef<WorkspaceMember>[] = (onRemove) => [
   { accessorKey: 'email', header: 'Name' },
   {
